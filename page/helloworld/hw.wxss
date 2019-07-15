@@ -1,0 +1,46 @@
+/* .par-contain{
+  width: 300rpx;
+  height: 300rps;
+  background: yellow;
+  text-align: center;
+  color: white;
+  line-height: 300rpx;
+}
+
+.hp-contain{
+  background: pink;
+}
+
+.chrild-contain{
+  width: 200rpx;
+  height: 200rpx;
+  background: red;
+  text-align: center;
+  color: white;
+  line-height: 200rpx;
+}
+
+.hc-contain{
+  background: peru;
+} */
+
+#green{
+  background: greenyellow;
+  height: 200rpx;
+  width: 100%;
+}
+#red{
+  background: red;
+  height: 200rpx;
+  width: 100%;
+}
+#yellow{
+  background: yellow;
+  height: 200rpx;
+  width: 100%;
+}
+#blue{
+  background:blue;
+  height: 200rpx;
+  width: 100%;
+}

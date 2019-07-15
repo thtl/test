@@ -1,0 +1,98 @@
+<!-- <view>
+  <block wx:for="{{items}}" wx:for-item="item" wx:key="index">
+    <view>
+      {{index}}:{{item.name}}
+    </view>
+  </block>
+</view> -->
+
+<!-- <view>
+  今晚吃啥啊？
+  <view wx:if="{{flag==1}}">吃面</view>
+  <view wx:elif="{{flag==2}}">吃饭</view>
+  <view wx:else="{{flag==3}}">吃你</view>
+</view> -->
+
+<!-- <template name="tempItem">
+  <view>
+    收件人：{{name}}
+  </view>
+  <view>连续方式：{{phone}}</view>
+  <view>地址：{{address}}</view>
+</template>
+
+<template is="tempItem" data="{{...item}}"></template> -->
+
+<!-- <view class='A' bindtap='clickA' capture-bind:tap="catchA">
+  contain-A
+  <view class='B' bindtap='clickB' capture-bind:tap="catchB">
+    contain-B
+    <view class='C' bindtap='clickC' capture-bind:tap="catchC">
+      contain-C
+    </view>
+  </view>
+</view> -->
+
+<!-- <view>
+  <view>view容器</view>
+  <view class='par-contain' hover-class='hp-class'          hover-start-time='1500' hover-stay-time='1500'>
+  111
+    <view class='chrild-conrain' hover-class='hc-class' hover-start-time='1000' hover-stay-time='2000'>
+    222
+    </view>
+  </view>
+</view> -->
+
+<!-- <view class="section">
+  <view class="section__title">vertical scroll</view>
+  <scroll-view
+    scroll-y
+    style="height: 200rpx;"
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower"
+    bindscroll="scroll"
+    scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}"
+  >
+    <view id="green" class="scroll-view-item bc_green" style></view>
+    <view id="red" class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to scroll into view</button>
+    <button size="mini" bindtap="tapMove">click me to scroll</button>
+  </view>
+</view>
+<view class="section section_gap">
+  <view class="section__title">horizontal scroll</view>
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100% height: 200rpx">
+    <view id="green" class="scroll-view-item_H bc_green"></view>
+    <view id="red" class="scroll-view-item_H bc_red"></view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow"></view>
+    <view id="blue" class="scroll-view-item_H bc_blue"></view>
+  </scroll-view>
+</view> -->
+
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<button bindtap="changeIndicatorDots">indicator-dots</button>
+<button bindtap="changeAutoplay">autoplay</button>
+<slider bindchange="intervalChange" show-value min="500" max="2000" />
+interval
+<slider bindchange="durationChange" show-value min="1000" max="10000" />
+duration
+
+
+
